@@ -1,46 +1,46 @@
 # mecflu-tank-draining
 
-Projeto da disciplina **Mecânica dos Fluidos**, ministrada pelo professor **Júlio César**.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Microsoft Word](https://img.shields.io/badge/Microsoft_Word-relatório-2B579A?logo=microsoftword&logoColor=white)](https://www.microsoft.com/microsoft-365/word)
+![Status](https://img.shields.io/badge/status-Etapa_2-8A2BE2)
 
-## Integrantes
-
-- Leonardo Leme Sanner — RA 169.328
-- Eleonora Chofi — RA 169.278
-
-## Objetivo
-
-Estudar experimentalmente o esvaziamento de um reservatório e comparar a variação do nível da água ao longo do tempo com o modelo quase-estacionário obtido pela aplicação de Bernoulli e da continuidade.
+Projeto da disciplina **Mecânica dos Fluidos**, ministrada pelo professor **Júlio César**, para analisar o esvaziamento de um reservatório e comparar os resultados medidos com o modelo teórico.
 
 ## Experimento
 
-O experimento utiliza uma garrafa PET transparente de 2 L como reservatório e água como fluido. Durante o escoamento livre por um pequeno orifício lateral, serão registrados o nível da água e o tempo transcorrido entre duas alturas definidas.
+O aparato utiliza uma **garrafa PET transparente de 2 L** com água. Durante o escoamento por um pequeno orifício lateral, são registrados o nível da água e o tempo para realizar a comparação **teórico-experimental** com o modelo baseado em Bernoulli e continuidade.
 
-## Estrutura planejada
+```mermaid
+flowchart LR
+    A["PET de 2 L com água"] --> B["Escoamento pelo orifício"]
+    B --> C["Medição de nível e tempo"]
+    C --> D["Tratamento dos dados"]
+    D --> E["Análise teórico-experimental"]
+```
+
+## Documentos
+
+- [Protocolo experimental](docs/mecflu-experimental-protocol.docx)
+- [Proposta da disciplina](docs/mecflu-proposal.pdf)
+
+## Estrutura
 
 ```text
 .
-├── README.md
-├── docs/          # proposta da disciplina e protocolo experimental
-├── data/
-│   ├── raw/       # medições originais
-│   └── processed/ # dados tratados
-├── calculations/  # planilhas ou códigos de análise
-├── images/        # fotos, diagramas e registros selecionados
+├── docs/          # proposta e protocolo
+├── data/          # medições brutas e tratadas
+├── calculations/  # cálculos e planilhas
+├── images/        # registros visuais
 └── scripts/       # automações auxiliares
 ```
 
-## Cronograma resumido
+## Cronograma
 
-| Período | Atividade |
+| Data | Marco |
 | --- | --- |
-| 1 de junho de 2026 | Entrega do protocolo experimental |
-| 2 a 14 de junho de 2026 | Preparação do aparato, testes e ensaios |
-| 15 a 21 de junho de 2026 | Processamento dos dados, relatório e vídeo |
-| 22 de junho de 2026 | Conclusão da versão final interna |
-| 29 de junho de 2026 | Entrega final oficial |
+| **22 de junho de 2026** | Entrega interna |
+| **29 de junho de 2026** | Entrega oficial |
 
 ## Status
 
 **Etapa 2** — protocolo experimental.
-
-A entrega final incluirá vídeo, relatório e processamento computacional dos dados experimentais.
